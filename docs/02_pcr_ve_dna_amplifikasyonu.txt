@@ -1,0 +1,19 @@
+# Bölüm 2: Polimeraz Zincir Reaksiyonu (PCR) ve DNA Çoğaltımı
+
+## 1. Giriş ve Prensip
+Polimeraz Zincir Reaksiyonu (PCR), 1983 yılında Kary Mullis tarafından geliştirilmiş olup, hedeflenen belirli bir DNA bölgesinin tüp içinde (in vitro) milyonlarca kat çoğaltılmasını sağlayan moleküler bir tekniktir. Modern biyoteknoloji, adli tıp, genetik tanı ve bulaşıcı hastalık testlerinin temel omurgasıdır.
+
+## 2. PCR Reaksiyon Bileşenleri
+Tipik bir PCR reaksiyon karışımı şu beş temel bileşenden oluşur:
+1. Kalıp DNA (Template): Çoğaltılmak istenen hedef bölgeyi içeren orijinal DNA molekülü.
+2. Primerler: Hedef bölgenin 5' ve 3' sınırlarına bağlanan, 18-25 nükleotit uzunluğundaki tek zincirli oligonükleotit dizileri (İleri ve Geri primer).
+3. Termostabil DNA Polimeraz: Yüksek sıcaklıklara dayanıklı enzim; en yaygın örneği Thermus aquaticus bakterisinden izole edilen Taq DNA polimerazdır.
+4. dNTP Karışımı (Deoksinükleotit Trifosfatlar): Yeni sentezlenecek zincir için yapı taşları olan dATP, dCTP, dGTP ve dTTP.
+5. Magnezyum (Mg2+) ve Tampon Çözelti: DNA polimerazın katalitik aktivitesi için zorunlu kofaktör olan magnezyum klorür (MgCl2) ve uygun pH ortamını sağlayan tampon.
+
+## 3. PCR Döngüsünün Üç Temel Aşaması
+PCR reaksiyonu bir termal döngü cihazında (thermal cycler) tekrarlanan 3 adımdan oluşur:
+- Denatürasyon (94-98 °C): Yüksek sıcaklıkta çift zincirli DNA'nın hidrojen bağları koparak zincirler birbirinden ayrılır.
+- Bağlanma / Annealing (50-65 °C): Sıcaklık düşürülür; primerler hedef DNA zincirlerindeki tamamlayıcı bölgelerine bağlanır.
+- Uzama / Extension (72 °C): Taq polimeraz en uygun çalışma sıcaklığında dNTP'leri kullanarak 5' ucundan 3' ucuna doğru yeni DNA zincirini sentezler.
+25-35 döngü sonunda hedef DNA parçası teorik olarak milyarlarca kopyaya ulaşır.

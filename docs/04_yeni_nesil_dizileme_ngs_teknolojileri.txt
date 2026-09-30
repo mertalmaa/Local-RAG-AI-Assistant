@@ -1,0 +1,15 @@
+# Bölüm 4: Yeni Nesil Dizileme (NGS) Teknolojileri
+
+## 1. NGS Devrimi ve Geliştirilme Nedeni
+Sanger yöntemi yüksek doğruluk sağlasa da, aynı anda yalnızca tek bir DNA parçasını okuyabildiği için büyük genomları dizilemede aşırı yavaş ve maliyetliydi. Yeni Nesil Dizileme (Next-Generation Sequencing - NGS) veya ikinci nesil dizileme, milyonlarca hatta milyarlarca DNA parçasını aynı anda paralel olarak (Massively Parallel Sequencing) dizilemek amacıyla geliştirilmiştir.
+
+## 2. Kütüphane Hazırlığı ve Akış Hücreleri
+NGS iş akışı üç temel adımdan oluşur:
+1. Kütüphane Hazırlığı (Library Preparation): Genomik DNA sonikasyon veya enzimlerle küçük parçalara (200-500 bp) bölünür. Parçaların uçlarına adaptör dizileri ve numune indeks barkodları bağlanır.
+2. Klonal Çoğaltım: DNA parçaları akış hücresi (flow cell) adı verilen cam yüzeylere tutunur. Illumina platformunda köprü amplifikasyonu (bridge amplification) yöntemiyle her bir parçadan yüzlerce kopyalık DNA kümeleri (cluster) oluşturulur.
+3. Sentez Yoluyla Dizileme (Sequencing by Synthesis - SBS): Floresan işaretli ve tersinir sonlandırıcı (reversible terminator) içeren dNTP'ler eklenir. Her döngüde tek bir nükleotit bağlanır, yüksek çözünürlüklü kameralarla floresan sinyali fotoğraflanır ve sonlandırıcı kimyasal olarak kaldırılarak bir sonraki nükleotide geçilir.
+
+## 3. NGS'nin Avantajları ve Uygulama Alanları
+- Yüksek Verim (High-Throughput): Tek bir akış hücresi çalıştırmasında terabazlarca (Tb) veri üretilebilir.
+- Düşük Maliyet: İnsan genomunun dizilenme maliyeti 3 milyar dolardan 200 doların altına düşmüştür.
+- Uygulama Alanları: Tüm Genom Dizileme (WGS), Tüm Ekzom Dizileme (WES), RNA Dizileme (RNA-seq) ve hedefe yönelik kanser gen panelleri.

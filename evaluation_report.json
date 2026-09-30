@@ -1,0 +1,229 @@
+{
+  "with_llm": true,
+  "summary": {
+    "test_count": 9,
+    "answerable_test_count": 7,
+    "retrieval_passed": 7,
+    "retrieval_accuracy": 1.0,
+    "answer_passed": 9,
+    "answer_accuracy": 1.0
+  },
+  "results": [
+    {
+      "id": "answerable_crispr",
+      "question": "CRISPR-Cas9 sisteminde DNA çift ipliğini kesen moleküler makas enzim nedir?",
+      "answerable": true,
+      "expected_source": "06_crispr_cas9_ve_genom_duzenleme.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.123,
+      "retrieved_chunks": [
+        {
+          "source": "06_crispr_cas9_ve_genom_duzenleme.txt",
+          "chunk_index": 3,
+          "distance": 0.1292
+        },
+        {
+          "source": "06_crispr_cas9_ve_genom_duzenleme.txt",
+          "chunk_index": 2,
+          "distance": 0.2108
+        }
+      ],
+      "answer": "Cas9 Endonükleaz",
+      "answer_pass": true,
+      "generation_seconds": 0.934
+    },
+    {
+      "id": "answerable_pcr",
+      "question": "PCR reaksiyonunda Taq DNA polimerazın aktivitesi için hangi iyon kofaktör olarak zorunludur?",
+      "answerable": true,
+      "expected_source": "02_pcr_ve_dna_amplifikasyonu.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.031,
+      "retrieved_chunks": [
+        {
+          "source": "02_pcr_ve_dna_amplifikasyonu.txt",
+          "chunk_index": 5,
+          "distance": 0.2499
+        },
+        {
+          "source": "02_pcr_ve_dna_amplifikasyonu.txt",
+          "chunk_index": 0,
+          "distance": 0.3134
+        }
+      ],
+      "answer": "Magnezyum (Mg2+), PCR reaksiyonunda Taq DNA polimerazın aktivitesi için hangi iyon kofaktör olarak zorunludur [Kaynak: 02_pcr endonuclease.txt, Parça: 5].",
+      "answer_pass": true,
+      "generation_seconds": 1.954
+    },
+    {
+      "id": "answerable_sanger",
+      "question": "Sanger dizileme yönteminde zincir sentezinin durmasını sağlayan modifiye nükleotitler nelerdir?",
+      "answerable": true,
+      "expected_source": "03_sanger_zincir_sonlandirma_dizileme.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.048,
+      "retrieved_chunks": [
+        {
+          "source": "03_sanger_zincir_sonlandirma_dizileme.txt",
+          "chunk_index": 0,
+          "distance": 0.3782
+        },
+        {
+          "source": "03_sanger_zincir_sonlandirma_dizileme.txt",
+          "chunk_index": 5,
+          "distance": 0.4092
+        }
+      ],
+      "answer": "[Kaynak: 03_sanger_zincir_sonlandirma_dizileme.txt, Parça: 5] ddNTPler.",
+      "answer_pass": true,
+      "generation_seconds": 1.342
+    },
+    {
+      "id": "answerable_ngs",
+      "question": "Illumina yeni nesil dizileme teknolojisinde DNA parçaları akış hücresinde hangi yöntemle çoğaltılır?",
+      "answerable": true,
+      "expected_source": "04_yeni_nesil_dizileme_ngs_teknolojileri.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.061,
+      "retrieved_chunks": [
+        {
+          "source": "04_yeni_nesil_dizileme_ngs_teknolojileri.txt",
+          "chunk_index": 4,
+          "distance": 0.1536
+        },
+        {
+          "source": "01_dna_ve_nukleik_asitlerin_temelleri.txt",
+          "chunk_index": 1,
+          "distance": 0.35
+        }
+      ],
+      "answer": "Bridge amplification",
+      "answer_pass": true,
+      "generation_seconds": 0.734
+    },
+    {
+      "id": "answerable_blast",
+      "question": "BLAST dizi hizalamasında E-değeri (Expectation value) neyi ifade eder?",
+      "answerable": true,
+      "expected_source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.098,
+      "retrieved_chunks": [
+        {
+          "source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
+          "chunk_index": 7,
+          "distance": 0.392
+        },
+        {
+          "source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
+          "chunk_index": 5,
+          "distance": 0.444
+        }
+      ],
+      "answer": "E-değeri, bulunan benzerliğin tamamen rastlantısal olarak ortaya çıkma olasılığını gösterir. Yüksek Puanlı Bölge Çiftleri (HSP) bulunur, [Kaynak: 07_dizi_hizalama_ve_blast_algoritmasi.txt, Parça: 5]",
+      "answer_pass": true,
+      "generation_seconds": 2.947
+    },
+    {
+      "id": "answerable_ont",
+      "question": "Oxford Nanopore dizileme sistemi nükleotitleri optik ışık yerine ne tür bir ölçümle okur?",
+      "answerable": true,
+      "expected_source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.034,
+      "retrieved_chunks": [
+        {
+          "source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
+          "chunk_index": 6,
+          "distance": 0.2735
+        },
+        {
+          "source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
+          "chunk_index": 5,
+          "distance": 0.3472
+        }
+      ],
+      "answer": "Oxford Nanopore dizileme sistemi nükleotitleri optik ışık yerine elektriksel ölçüm yapar. [Kaynak: 05_ucuncu_nesil_nanopor, Parça: 3]",
+      "answer_pass": true,
+      "generation_seconds": 2.185
+    },
+    {
+      "id": "answerable_database",
+      "question": "Proteinlerin amino asit dizilerini ve fonksiyonel alanlarını içeren uluslararası veritabanı hangisidir?",
+      "answerable": true,
+      "expected_source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
+      "retrieval_hit": true,
+      "context_is_relevant": true,
+      "retrieval_seconds": 0.031,
+      "retrieved_chunks": [
+        {
+          "source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
+          "chunk_index": 4,
+          "distance": 0.304
+        },
+        {
+          "source": "01_dna_ve_nukleik_asitlerin_temelleri.txt",
+          "chunk_index": 2,
+          "distance": 0.4505
+        }
+      ],
+      "answer": "UniProt (Universal Protein Resource): [Kaynak: 10_biyoinformatik_veritabanlari_ve_araclari.txt, Parça: 4]",
+      "answer_pass": true,
+      "generation_seconds": 1.653
+    },
+    {
+      "id": "unanswerable_mars",
+      "question": "Mars yüzeyindeki ilk belediye başkanı kim seçilmiştir?",
+      "answerable": false,
+      "expected_source": null,
+      "retrieval_hit": null,
+      "context_is_relevant": false,
+      "retrieval_seconds": 0.05,
+      "retrieved_chunks": [
+        {
+          "source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
+          "chunk_index": 3,
+          "distance": 0.8716
+        },
+        {
+          "source": "02_pcr_ve_dna_amplifikasyonu.txt",
+          "chunk_index": 4,
+          "distance": 0.8726
+        }
+      ],
+      "answer": "Bu bilgi belgelerde bulunmuyor.",
+      "answer_pass": true,
+      "generation_seconds": 0.0
+    },
+    {
+      "id": "unanswerable_capital",
+      "question": "Türkiye'nin başkenti neresidir?",
+      "answerable": false,
+      "expected_source": null,
+      "retrieval_hit": null,
+      "context_is_relevant": false,
+      "retrieval_seconds": 0.059,
+      "retrieved_chunks": [
+        {
+          "source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
+          "chunk_index": 7,
+          "distance": 0.8508
+        },
+        {
+          "source": "06_crispr_cas9_ve_genom_duzenleme.txt",
+          "chunk_index": 5,
+          "distance": 0.8932
+        }
+      ],
+      "answer": "Bu bilgi belgelerde bulunmuyor.",
+      "answer_pass": true,
+      "generation_seconds": 0.0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+# Bölüm 10: Biyoinformatik Veritabanları, Dosya Formatları ve Araçları
+
+## 1. Başlıca Uluslararası Biyoinformatik Veritabanları
+Biyolojik verilerin küresel ölçekte depolanması ve araştırmacılara açık erişimle sunulması için uluslararası veri konsorsiyumları kurulmuştur:
+- NCBI (National Center for Biotechnology Information): ABD merkezli dev veri sağlayıcısı. GenBank (nükleotid dizileri), RefSeq (küratörlü referans diziler), PubMed (biyomedikal makaleler), dbSNP (genetik varyasyonlar) ve BLAST sunucularını barındırır.
+- Ensembl: EMBL-EBI ve Wellcome Sanger Enstitüsü ortaklığıyla omurgalı genomları ve anotasyonları için geliştirilmiş kapsamlı genom tarayıcısıdır.
+- UniProt (Universal Protein Resource): Proteinlerin amino asit dizilerini, 3 boyutlu yapılarını, fonksiyonel alanlarını ve translasyon sonrası modifikasyonlarını içeren otorite protein veritabanıdır.
+- PDB (Protein Data Bank): X-ışını kristalografisi, Kriyojenik Elektron Mikroskobu (Cryo-EM) ve NMR ile aydınlatılmış makromoleküler 3D yapı koordinatlarını barındırır.
+
+## 2. Temel Biyoinformatik Dosya Formatları
+- FASTA (.fasta / .fa): Başlık satırı '>' ile başlayan, ham nükleotit veya amino asit dizilerini depolayan en temel metin formatıdır.
+- FASTQ (.fastq / .fq): Ham dizileme okumalarını ve her bir baza ait Phred kalite puanlarını (Q puanı) dört satırda tutan formattır.
+- SAM / BAM (.sam / .bam): FASTQ okumalarının bir referans genoma hizalanma koordinatlarını tutar. SAM metin, BAM ise SAM'in sıkıştırılmış ikili (binary) halidir.
+- VCF (.vcf): Referans genoma göre tespit edilen genetik varyasyonların (SNP, İndel) kromozom pozisyonlarını ve kalite skorlarını saklar.
+
+## 3. Temel Açık Kaynak Analiz Araçları
+- FastQC: Ham FASTQ dosyalarının kalite kontrolünü ve adaptör kirlilik analizini yapar.
+- BWA-MEM ve Bowtie2: Milyonlarca kısa okumayı insan referans genomuna (GRCh38) saniyeler içinde haritalayan hizalayıcılardır.
+- Samtools: BAM dosyalarını sıralama, indeksleme ve filtreleme işlemlerinde kullanılan standart kütüphanedir.

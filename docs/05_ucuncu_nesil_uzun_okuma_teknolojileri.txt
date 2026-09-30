@@ -1,0 +1,17 @@
+# Bölüm 5: Üçüncü Nesil Uzun Okuma Dizileme Teknolojileri
+
+## 1. İkinci Nesil NGS'nin Kısıtları ve Uzun Okuma İhtiyacı
+İkinci nesil NGS yöntemleri kısa okumalar (150-300 baz çifti) üretir. Bu durum insan genomundaki tekrarlayan dizilerin, telomer ve sentromer bölgelerinin ve büyük yapısal varyasyonların (büyük delesyon, translokasyon, inversiyon) doğru hizalanmasını zorlaştırır. Üçüncü nesil teknolojiler, PCR çoğaltımı gerektirmeden tek bir DNA molekülünü doğrudan ve uzun parçalar halinde (10.000 - 100.000+ baz çifti) okumak için tasarlanmıştır.
+
+## 2. Pacific Biosciences (PacBio) HiFi Dizileme
+PacBio teknolojisi, Sıfır Modlu Dalga Kılavuzu (Zero-Mode Waveguide - ZMW) adı verilen mikroskobik kuyucuklarda çalışır:
+- Tek bir DNA polimeraz molekülü ZMW tabanına sabitlenir.
+- Daireselleştirilmiş DNA molekülü (SMRTbell) polimeraz tarafından defalarca dönerek okunur (Circular Consensus Sequencing - CCS).
+- Tekrarlı okumalar sonucunda rastgele hatalar filtrelenir ve 15-20 kb uzunluğunda, %99.9 doğrulukta 'HiFi okumaları' elde edilir.
+
+## 3. Oxford Nanopore Technologies (ONT) Nanopor Dizileme
+Nanopor teknolojisi optik veya floresan sinyaller yerine doğrudan elektriksel ölçüm yapar:
+- Sentetik bir membran üzerindeki protein nanoporundan (örneğin CsgG) iyonik akım geçirilir.
+- Motor protein eşliğinde tek sarmallı DNA molekülü nanopordan geçerken, porun boğazını tıkayan nükleotit kombinasyonları iyon akımında karakteristik dalgalanmalara yol açar.
+- Bu akım değişimleri yapay zekâ (derin öğrenme) tabanlı 'basecaller' modelleriyle anında A, T, G, C harflerine dönüştürülür.
+ONT sistemleri MinION gibi cep boyutunda USB cihazlarla saha koşullarında gerçek zamanlı dizileme imkânı sunar.

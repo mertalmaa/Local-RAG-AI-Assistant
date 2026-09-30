@@ -1,0 +1,17 @@
+# Bölüm 3: Sanger Zincir Sonlandırma Dizileme Yöntemi
+
+## 1. Yöntemin Tarihçesi ve Temeli
+1977 yılında Frederick Sanger ve çalışma arkadaşları tarafından geliştirilen Sanger dizileme yöntemi, birinci nesil DNA dizileme teknolojisidir. İnsan Genom Projesi'nin başarıyla tamamlanmasında ana yöntem olarak kullanılmış ve günümüzde halen en yüksek doğruluk oranına sahip 'altın standart' (gold standard) kabul edilmektedir.
+
+## 2. Temel Çalışma Prensibi: ddNTP'ler
+Sanger yönteminin temel mekanizması dideoksinükleotit trifosfatların (ddNTP) kullanılmasıdır:
+- Normal dNTP'lerin 3' pozisyonunda hidroksil (-OH) grubu bulunur ve bu grup yeni bir nükleotidin fosfodiester bağıyla bağlanması için şarttır.
+- ddNTP moleküllerinde ise 3' karbonundaki oksijen atomu eksiktir (dideoksi).
+- DNA polimeraz zincir sentezlerken ortama rastgele bir ddNTP eklediğinde, 3'-OH grubu bulunmadığı için zincir uzaması anında sonlanır (zincir sonlandırma).
+
+## 3. Floresan Boyalar ve Kapiler Elektroforez
+Geleneksel radyoaktif jel yöntemlerinin yerine modern otomatize Sanger sistemlerinde floresan boyalar kullanılır:
+- Dört farklı ddNTP türü (ddATP, ddCTP, ddGTP, ddTTP) farklı renkte ışıma yapan floresan boyalarla işaretlenir.
+- Reaksiyon tamamlandığında, tek nükleotit farkla uzamış olan tüm DNA parçaları kapiler elektroforez tüplerinde boyutlarına göre ayrıştırılır.
+- Lazer dedektöründen geçen her parçanın yaydığı floresan sinyali bir elektroferogram grafiğine dönüştürülür ve DNA dizisi harf harf okunur.
+Sanger dizileme reaksiyon başına ortalama 800-1000 baz çifti (bp) okuma uzunluğu sunar ve %99.99 doğruluk düzeyindedir.

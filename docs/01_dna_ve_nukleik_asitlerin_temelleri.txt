@@ -1,0 +1,16 @@
+# Bölüm 1: DNA ve Nükleik Asitlerin Moleküler Temelleri
+
+## 1. Giriş ve Tanım
+Deoksiribonükleik asit (DNA), tüm hücresel canlıların ve birçok virüsün genetik talimatlarını taşıyan temel bilgi deposudur. Genetik bilginin depolanması, kopyalanması ve nesilden nesile aktarılması DNA molekülünün benzersiz kimyasal yapısı sayesinde gerçekleşir.
+
+## 2. Nükleotitlerin Yapısı
+DNA'nın temel yapı birimleri "nükleotit" adı verilen moleküllerdir. Her bir nükleotit üç ana bileşenden meydana gelir:
+1. Azotlu Organik Baz: Pürinler (Adenin - A, Guanin - G) ve Pirimidinler (Sitozin - C, Timin - T). RNA molekülünde Timin yerine Urasil (U) bazı bulunur.
+2. Beş Karbonlu Şeker: DNA'da 2'-deoksiriboz şekeri, RNA'da ise riboz şekeri yer alır. Deoksiribozun 2. karbonunda oksijen atomu bulunmaz.
+3. Fosfat Grubu: Nükleotidin 5' karbonuna bağlı olan inorganik fosfat molekülüdür.
+
+## 3. Çift Sarmal Mimarisi ve Baz Eşleşmesi
+1953 yılında James Watson ve Francis Crick tarafından keşfedilen modele göre, DNA çift zincirli, sağ el yönlü bir sarmal yapıya sahiptir:
+- Tamamlayıcılık (Komplementerlik): Adenin her zaman Timin ile 2 hidrojen bağı kurarak, Guanin ise Sitozin ile 3 hidrojen bağı kurarak eşleşir (A=T, G≡C).
+- Antiparalel Yönelim: İki zincir birbirine zıt yönlerde uzanır. Bir zincir 5' ucundan 3' ucuna doğru ilerlerken, karşıt zincir 3' ucundan 5' ucuna doğru uzanır.
+- Omurga Yapısı: Şeker ve fosfat grupları fosfodiester bağları ile birbirine bağlanarak dış omurgayı oluşturur; hidrofobik azotlu bazlar ise sarmalın iç kısmında istiflenir.

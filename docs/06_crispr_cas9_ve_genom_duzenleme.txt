@@ -1,0 +1,15 @@
+# Bölüm 6: CRISPR-Cas9 Teknolojisi ve Hassas Genom Düzenleme
+
+## 1. CRISPR Sisteminin Biyolojik Kökeni
+CRISPR (Clustered Regularly Interspaced Short Palindromic Repeats), bakterilerin ve arkelerin bakteriyofajlara (virüslere) karşı geliştirdiği adaptif bir bağışıklık mekanizmasıdır. Bakteri, virüs DNA'sından aldığı küçük parçaları kendi genomundaki CRISPR lokusuna kaydeder ve sonraki saldırılarda bu dizileri kullanarak yabancı DNA'yı parçalar.
+
+## 2. CRISPR-Cas9 Sisteminin Temel Bileşenleri
+2012 yılında Emmanuelle Charpentier ve Jennifer Doudna tarafından programlanabilir bir gen düzenleme aracına dönüştürülen sistem iki ana bileşene dayanır:
+1. Cas9 Endonükleaz: DNA çift zincirini hassas şekilde kesebilen moleküler bir makas görevi görür.
+2. Kılavuz RNA (gRNA / sgRNA): Cas9 enzimini genomdaki tam 20 nükleotitlik hedef bölgeye yönlendiren yapay RNA zinciridir.
+- PAM Dizisi (Protospacer Adjacent Motif): Cas9 enziminin hedefi tanıyıp bağlanabilmesi için hedef dizinin hemen ardında 5'-NGG-3' şeklinde kısa bir PAM motifi bulunmak zorundadır.
+
+## 3. Kesim ve DNA Tamir Mekanizmaları
+Cas9 hedef bölgeye bağlandığında çift iplik kırığı (Double-Strand Break - DSB) oluşturur. Hücre bu kırığı iki farklı yoldan tamir eder:
+- Homolog Olmayan Uç Birleştirme (NHEJ): Hata yapmaya açık mekanizmadır; rastgele nükleotit eklemeleri veya silinmeleri (indel) meydana getirerek hedef geni işlevsiz kılar (gen nakavtı - knock-out).
+- Homolojiye Dayalı Tamir (HDR): Dışarıdan verilen bir kalıp DNA eşliğinde gerçekleşir; mutasyonlu genin yerine sağlıklı dizinin hassas şekilde yerleştirilmesini (gen düzeltme - knock-in) sağlar.

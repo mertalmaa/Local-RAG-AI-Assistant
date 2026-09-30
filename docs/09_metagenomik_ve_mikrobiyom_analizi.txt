@@ -1,0 +1,18 @@
+# Bölüm 9: Metagenomik ve Mikrobiyom Analizi
+
+## 1. Metagenomik Nedir?
+Doğada ve insan vücudunda yaşayan mikroorganizmaların %99'undan fazlası standart laboratuvar koşullarında petri kaplarında kültürlenemez. Metagenomik, çevresel bir örnekteki (toprak, deniz suyu, insan bağırsağı vb.) tüm mikroorganizmaların DNA'sını kültürleme adımı olmaksızın doğrudan izole edip dizileyen genomik yaklaşımdır. İnsan mikrobiyomu, vücudumuzda yaşayan trilyonlarca bakteri, virüs ve mantarın oluşturduğu ekosistemdir.
+
+## 2. Metagenomik Analiz Stratejileri
+Mikrobiyom araştırmalarında iki ana dizileme stratejisi uygulanır:
+1. Hedefe Yönelik 16S rRNA Gen Dizilemesi:
+   - Bakterilerin ribozomal 16S geni evrimsel olarak korunmuş bölgeler ile türe özgü hiperdeğişken bölgeler (V1-V9, sıklıkla V3-V4) içerir.
+   - Bu bölge çoğaltılarak dizilenir ve bakteriyel taksonomi (hangi bakterilerin bulunduğu) düşük maliyetle belirlenir.
+2. Tüm Genom Shotgun Metagenomiği:
+   - Örnekteki tüm mikrobiyal DNA parçalanıp bütünüyle dizilenir.
+   - Yalnızca hangi türlerin olduğunu değil, bu mikroorganizmaların hangi metabolik ve fonksiyonel genlere sahip olduğunu (örneğin antibiyotik direnç genleri) da ortaya çıkarır.
+
+## 3. Biyoinformatik Çeşitlilik Ölçümleri
+Mikrobiyom profillemesinde topluluk yapısı iki temel ekolojik metrikle incelenir:
+- Alfa Çeşitliliği (Alpha Diversity): Tek bir örneğin kendi içindeki tür zenginliğini ve dağılım eşitliğini ölçer (Shannon indeksi, Simpson indeksi, Chao1).
+- Beta Çeşitliliği (Beta Diversity): Farklı örnekler veya hasta ve sağlıklı gruplar arasındaki mikrobiyom kompozisyonu farklılıklarını karşılaştırır (Bray-Curtis mesafesi, UniFrac metriği).

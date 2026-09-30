@@ -1,0 +1,65 @@
+[
+  {
+    "id": "answerable_crispr",
+    "question": "CRISPR-Cas9 sisteminde DNA çift ipliğini kesen moleküler makas enzim nedir?",
+    "answerable": true,
+    "expected_source": "06_crispr_cas9_ve_genom_duzenleme.txt",
+    "expected_terms": ["Cas9"]
+  },
+  {
+    "id": "answerable_pcr",
+    "question": "PCR reaksiyonunda Taq DNA polimerazın aktivitesi için hangi iyon kofaktör olarak zorunludur?",
+    "answerable": true,
+    "expected_source": "02_pcr_ve_dna_amplifikasyonu.txt",
+    "expected_terms": ["Magnezyum"]
+  },
+  {
+    "id": "answerable_sanger",
+    "question": "Sanger dizileme yönteminde zincir sentezinin durmasını sağlayan modifiye nükleotitler nelerdir?",
+    "answerable": true,
+    "expected_source": "03_sanger_zincir_sonlandirma_dizileme.txt",
+    "expected_terms": ["ddNTP"]
+  },
+  {
+    "id": "answerable_ngs",
+    "question": "Illumina yeni nesil dizileme teknolojisinde DNA parçaları akış hücresinde hangi yöntemle çoğaltılır?",
+    "answerable": true,
+    "expected_source": "04_yeni_nesil_dizileme_ngs_teknolojileri.txt",
+    "expected_terms": ["bridge"]
+  },
+  {
+    "id": "answerable_blast",
+    "question": "BLAST dizi hizalamasında E-değeri (Expectation value) neyi ifade eder?",
+    "answerable": true,
+    "expected_source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
+    "expected_terms": ["rastlantı"]
+  },
+  {
+    "id": "answerable_ont",
+    "question": "Oxford Nanopore dizileme sistemi nükleotitleri optik ışık yerine ne tür bir ölçümle okur?",
+    "answerable": true,
+    "expected_source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
+    "expected_terms": ["elektrik"]
+  },
+  {
+    "id": "answerable_database",
+    "question": "Proteinlerin amino asit dizilerini ve fonksiyonel alanlarını içeren uluslararası veritabanı hangisidir?",
+    "answerable": true,
+    "expected_source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
+    "expected_terms": ["UniProt"]
+  },
+  {
+    "id": "unanswerable_mars",
+    "question": "Mars yüzeyindeki ilk belediye başkanı kim seçilmiştir?",
+    "answerable": false,
+    "expected_source": null,
+    "expected_terms": []
+  },
+  {
+    "id": "unanswerable_capital",
+    "question": "Türkiye'nin başkenti neresidir?",
+    "answerable": false,
+    "expected_source": null,
+    "expected_terms": []
+  }
+]

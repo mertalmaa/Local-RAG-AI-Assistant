@@ -1,0 +1,14 @@
+# Bölüm 7: Biyoinformatik Dizi Hizalama ve BLAST Algoritması
+
+## 1. Dizi Hizalamanın Önemi
+Dizi hizalama (Sequence Alignment), iki veya daha fazla biyolojik dizinin (DNA, RNA veya protein) benzerlik bölgelerini tanımlayarak işlevsel, yapısal ve evrimsel ilişkilerini ortaya çıkarmak için kullanılan temel biyoinformatik yöntemdir. Ortak bir atadan gelen dizilere homolog diziler adı verilir.
+
+## 2. Küresel ve Yerel Hizalama Algoritmaları
+- Küresel Hizalama (Needleman-Wunsch Algoritması): İki diziyi baştan sona tüm uzunlukları boyunca hizalar. Benzer uzunluktaki ve yüksek oranda akraba diziler için uygundur.
+- Yerel Hizalama (Smith-Waterman Algoritması): İki dizi arasındaki en yüksek benzerliğe sahip yerel alt bölgeleri bulur. Dinamik programlama (dynamic programming) yöntemiyle kesin ve optimal sonucu verir ancak büyük veritabanlarında hesaplama açısından yavaştır.
+
+## 3. BLAST (Basic Local Alignment Search Tool)
+BLAST, 1990 yılında Altschul ve arkadaşları tarafından geliştirilmiş, veritabanı aramalarını saniyeler seviyesine indiren sezgisel (heuristic) bir yerel hizalama algoritmasıdır:
+- Kelime Eşleştirme (Seeding): Sorgu dizisinden k-mer (örneğin protein için 3, DNA için 11 harfli) kısa kelimeler üretilir ve veritabanında kesin eşleşmeler aranır.
+- Genişletme (Extension): Eşleşen çekirdek bölgeler her iki yöne doğru puan düşene kadar uzatılır ve Yüksek Puanlı Bölge Çiftleri (HSP) bulunur.
+- E-Değeri (Expectation Value): E-değeri, bulunan benzerliğin tamamen rastlantısal olarak ortaya çıkma olasılığını gösterir. E-değeri sıfıra ne kadar yakınsa (örneğin 1e-50), eşleşmenin biyolojik olarak anlamlı ve gerçek bir homoloji olma ihtimali o kadar yüksektir.

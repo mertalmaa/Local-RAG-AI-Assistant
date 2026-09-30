@@ -1,0 +1,20 @@
+# Bölüm 8: Genetik Varyant Analizi ve Kanser Genomiği
+
+## 1. Genetik Varyasyon Tipleri
+Herhangi iki insanın genomu yaklaşık %99.9 oranında aynıdır; bireysel farklılıklar ve genetik hastalık yatkınlıkları %0.1'lik varyasyonlardan kaynaklanır:
+- Tek Nükleotit Polimorfizmleri (SNP / SNV): DNA dizisinde tek bir bazın değişmesidir (örneğin A yerine G gelmesi). Genomda en sık rastlanan varyasyon türüdür.
+- İndeller (Küçük İnsersiyon ve Delesyonlar): 1 ila 50 baz çifti arasındaki baz eklenmesi veya çıkarılmasıdır. Kodlama bölgesindeyse çerçeve kayması (frameshift) mutasyonlarına yol açabilir.
+- Yapısal Varyasyonlar (SV) ve Kopya Sayısı Değişimleri (CNV): 1000 bazdan büyük translokasyonlar, delesyonlar veya gen duplikasyonlarıdır.
+
+## 2. Kanser Genomiğinde Sürücü ve Yolcu Mutasyonlar
+Kanser, genomik instabilite ve kontrolsüz hücre çoğalmasıyla karakterize genetik bir hastalıktır:
+- Sürücü Mutasyonlar (Driver Mutations): Hücreye büyüme ve sağkalım avantajı sağlayarak tümör gelişimini doğrudan tetikleyen mutasyonlardır (örneğin TP53 tümör baskılayıcı geni, KRAS ve EGFR onkogenleri).
+- Yolcu Mutasyonlar (Passenger Mutations): Tümör gelişimi sırasında hücre bölünmelerinde rastgele biriken ancak doğrudan kanserleşmeye neden olmayan nötr mutasyonlardır.
+
+## 3. Biyoinformatik Varyant Çağırma Hattı (Variant Calling)
+Yeni nesil dizileme verisinden varyant tespiti şu standart hat ile gerçekleştirilir:
+1. Kalite Kontrolü (FastQC) ve Kırpma (Trimming)
+2. Referans Genoma Hizalama (BWA-MEM) ve BAM dosyasının sıralanması (Samtools)
+3. Dublike Okumaların Kaldırılması (Picard MarkDuplicates)
+4. Varyant Çağırma: GATK (Genome Analysis Toolkit) HaplotypeCaller ile VCF (Variant Call Format) dosyası üretilir.
+5. Varyant Anotasyonu: ANNOVAR veya VEP (Variant Effect Predictor) ile mutasyonun klinik önemi ve amino asit değişikliği raporlanır.
