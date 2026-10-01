@@ -32,7 +32,7 @@ graph TD
 | :--- | :--- | :--- |
 | **Dil Modeli (LLM)** | **Microsoft Foundry Local + Phi-3.5-mini** | 2.1 GB boyutunda, NVIDIA TensorRT-RTX ile GPU bellek hızlandırmalı yerel model. |
 | **Veri Tabanı** | **SQLite (`sqlite3`)** | Sıfır sunucu kurulumu, tek dosya (`rag_storage.db`), JSON formatında saklanan embedding vektörleri. |
-| **Embedding Modeli** | `paraphrase-multilingual-MiniLM-L12-v2` | Türkçe ve çok dilli metinler için optimize edilmiş 384 boyutlu vektör üretici. |
+| **Embedding Modeli** | `paraphrase-multilingual-MiniLM-L12-v2` + ONNX Runtime | Türkçe ve çok dilli metinler için 384 boyutlu, hızlı açılan CPU vektör üretici. |
 | **Retrieval Yöntemi** | **Normalize Kosinüs Benzerliği** | Vektör matrisi nokta çarpımı ile sub-milisaniye (15–20 ms) hızında en yakın parça seçimi. |
 | **Kullanıcı Arayüzü** | **Konsol / CLI (`main.py`)** | Gerçek zamanlı token akışı (streaming) ve etkileşimli sohbet döngüsü. |
 | **Test & Değerlendirme**| `evaluate.py` + `evaluation_questions.json` | Doğruluk ve gecikme sürelerini ölçen uçtan uca test çerçevesi. |
@@ -70,12 +70,14 @@ Local RAG AI Assistant/
 │   ├── 09_metagenomik_ve_mikrobiyom_analizi.txt
 │   └── 10_biyoinformatik_veritabanlari_ve_araclari.txt
 ├── ingest.py                  # Belgeleri okuma, parçalama ve SQLite'a vektör kaydı
+├── onnx_embedding.py          # ONNX Runtime embedding adaptörü
+├── models/                    # Yerel ONNX modeli ve tokenizer
 ├── rag.py                     # SQLite vektör araması, alaka kontrolü ve Foundry streaming
 ├── main.py                    # Kullanıcı dostu etkileşimli CLI sohbet döngüsü
 ├── evaluate.py                # Otomatik test ve süre ölçüm aracı
 ├── evaluation_questions.json  # 9 adet test vakası (cevaplanabilir ve cevaplanamaz)
 ├── evaluation_report.json     # Test sonuçları ve doğruluk raporu (%100 başarı)
-├── requirements.txt           # Temiz Python bağımlılık listesi (3 paket)
+├── requirements.txt           # Temiz Python bağımlılık listesi (4 paket)
 └── rag_storage.db             # SQLite veritabanı dosyası (10 belge, 84 parça)
 ```
 

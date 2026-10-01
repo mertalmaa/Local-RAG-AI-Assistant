@@ -51,19 +51,26 @@ def is_foundry_server_ready():
 
 
 def is_chat_model_loaded():
-    """İstenen sohbet modelinin Foundry belleğinde yüklü olup olmadığını kontrol eder."""
+    """İstenen sohbet modelinin gerçekten bellekte yüklü olup olmadığını kontrol eder."""
     try:
-        response = requests.get(f"{FOUNDRY_BASE_URL}/v1/models", timeout=2)
-        response.raise_for_status()
-        models = response.json().get("data", [])
-    except (requests.RequestException, ValueError):
+        # /v1/models önbellekteki modelleri de döndürebiliyor. Bu nedenle
+        # Foundry CLI'nin yalnızca bellekteki modelleri veren filtresini kullan.
+        output = run_foundry_command(
+            "model",
+            "list",
+            "--loaded",
+            "--output",
+            "json",
+        )
+        models = json.loads(output).get("models", [])
+    except (RuntimeError, json.JSONDecodeError):
         return False
 
     expected_name = CHAT_MODEL_NAME.lower()
     for model in models:
         model_id = str(model.get("id", "")).lower()
-        parent_name = str(model.get("parent", "")).lower()
-        if expected_name in {model_id, parent_name}:
+        alias = str(model.get("alias", "")).lower()
+        if expected_name == alias or expected_name in model_id:
             return True
 
     return False
@@ -114,10 +121,15 @@ def ensure_foundry_ready():
         else:
             raise RuntimeError("Foundry Local başlatıldı ancak HTTP servisine erişilemiyor.")
 
+    print("Foundry model durumu kontrol ediliyor...", flush=True)
     if is_chat_model_loaded():
         print(f"{CHAT_MODEL_NAME} modeli zaten bellekte yüklü.")
     else:
-        print(f"{CHAT_MODEL_NAME} modeli belleğe yükleniyor...")
+        print(
+            f"{CHAT_MODEL_NAME} modeli belleğe yükleniyor; "
+            "ilk açılış biraz sürebilir...",
+            flush=True,
+        )
         run_foundry_command("model", "load", CHAT_MODEL_NAME)
     print("Foundry Local kullanıma hazır.\n")
 

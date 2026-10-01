@@ -57,6 +57,7 @@ def run_chat_loop(db_path, embedding_model):
 
 
 def main():
+    print("Uygulama başlatılıyor...", flush=True)
     try:
         ensure_foundry_ready()
         embedding_model = load_embedding_model()

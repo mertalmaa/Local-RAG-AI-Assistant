@@ -1,12 +1,10 @@
 {
-  "with_llm": true,
+  "with_llm": false,
   "summary": {
     "test_count": 9,
     "answerable_test_count": 7,
     "retrieval_passed": 7,
-    "retrieval_accuracy": 1.0,
-    "answer_passed": 9,
-    "answer_accuracy": 1.0
+    "retrieval_accuracy": 1.0
   },
   "results": [
     {
@@ -16,7 +14,7 @@
       "expected_source": "06_crispr_cas9_ve_genom_duzenleme.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.123,
+      "retrieval_seconds": 0.024,
       "retrieved_chunks": [
         {
           "source": "06_crispr_cas9_ve_genom_duzenleme.txt",
@@ -28,10 +26,7 @@
           "chunk_index": 2,
           "distance": 0.2108
         }
-      ],
-      "answer": "Cas9 Endonükleaz",
-      "answer_pass": true,
-      "generation_seconds": 0.934
+      ]
     },
     {
       "id": "answerable_pcr",
@@ -40,7 +35,7 @@
       "expected_source": "02_pcr_ve_dna_amplifikasyonu.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.031,
+      "retrieval_seconds": 0.006,
       "retrieved_chunks": [
         {
           "source": "02_pcr_ve_dna_amplifikasyonu.txt",
@@ -52,10 +47,7 @@
           "chunk_index": 0,
           "distance": 0.3134
         }
-      ],
-      "answer": "Magnezyum (Mg2+), PCR reaksiyonunda Taq DNA polimerazın aktivitesi için hangi iyon kofaktör olarak zorunludur [Kaynak: 02_pcr endonuclease.txt, Parça: 5].",
-      "answer_pass": true,
-      "generation_seconds": 1.954
+      ]
     },
     {
       "id": "answerable_sanger",
@@ -64,7 +56,7 @@
       "expected_source": "03_sanger_zincir_sonlandirma_dizileme.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.048,
+      "retrieval_seconds": 0.01,
       "retrieved_chunks": [
         {
           "source": "03_sanger_zincir_sonlandirma_dizileme.txt",
@@ -76,10 +68,7 @@
           "chunk_index": 5,
           "distance": 0.4092
         }
-      ],
-      "answer": "[Kaynak: 03_sanger_zincir_sonlandirma_dizileme.txt, Parça: 5] ddNTPler.",
-      "answer_pass": true,
-      "generation_seconds": 1.342
+      ]
     },
     {
       "id": "answerable_ngs",
@@ -88,7 +77,7 @@
       "expected_source": "04_yeni_nesil_dizileme_ngs_teknolojileri.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.061,
+      "retrieval_seconds": 0.008,
       "retrieved_chunks": [
         {
           "source": "04_yeni_nesil_dizileme_ngs_teknolojileri.txt",
@@ -100,10 +89,7 @@
           "chunk_index": 1,
           "distance": 0.35
         }
-      ],
-      "answer": "Bridge amplification",
-      "answer_pass": true,
-      "generation_seconds": 0.734
+      ]
     },
     {
       "id": "answerable_blast",
@@ -112,7 +98,7 @@
       "expected_source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.098,
+      "retrieval_seconds": 0.006,
       "retrieved_chunks": [
         {
           "source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
@@ -124,10 +110,7 @@
           "chunk_index": 5,
           "distance": 0.444
         }
-      ],
-      "answer": "E-değeri, bulunan benzerliğin tamamen rastlantısal olarak ortaya çıkma olasılığını gösterir. Yüksek Puanlı Bölge Çiftleri (HSP) bulunur, [Kaynak: 07_dizi_hizalama_ve_blast_algoritmasi.txt, Parça: 5]",
-      "answer_pass": true,
-      "generation_seconds": 2.947
+      ]
     },
     {
       "id": "answerable_ont",
@@ -136,7 +119,7 @@
       "expected_source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.034,
+      "retrieval_seconds": 0.007,
       "retrieved_chunks": [
         {
           "source": "05_ucuncu_nesil_uzun_okuma_teknolojileri.txt",
@@ -148,10 +131,7 @@
           "chunk_index": 5,
           "distance": 0.3472
         }
-      ],
-      "answer": "Oxford Nanopore dizileme sistemi nükleotitleri optik ışık yerine elektriksel ölçüm yapar. [Kaynak: 05_ucuncu_nesil_nanopor, Parça: 3]",
-      "answer_pass": true,
-      "generation_seconds": 2.185
+      ]
     },
     {
       "id": "answerable_database",
@@ -160,7 +140,7 @@
       "expected_source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
       "retrieval_hit": true,
       "context_is_relevant": true,
-      "retrieval_seconds": 0.031,
+      "retrieval_seconds": 0.006,
       "retrieved_chunks": [
         {
           "source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
@@ -172,10 +152,7 @@
           "chunk_index": 2,
           "distance": 0.4505
         }
-      ],
-      "answer": "UniProt (Universal Protein Resource): [Kaynak: 10_biyoinformatik_veritabanlari_ve_araclari.txt, Parça: 4]",
-      "answer_pass": true,
-      "generation_seconds": 1.653
+      ]
     },
     {
       "id": "unanswerable_mars",
@@ -184,7 +161,7 @@
       "expected_source": null,
       "retrieval_hit": null,
       "context_is_relevant": false,
-      "retrieval_seconds": 0.05,
+      "retrieval_seconds": 0.005,
       "retrieved_chunks": [
         {
           "source": "07_dizi_hizalama_ve_blast_algoritmasi.txt",
@@ -196,10 +173,7 @@
           "chunk_index": 4,
           "distance": 0.8726
         }
-      ],
-      "answer": "Bu bilgi belgelerde bulunmuyor.",
-      "answer_pass": true,
-      "generation_seconds": 0.0
+      ]
     },
     {
       "id": "unanswerable_capital",
@@ -208,7 +182,7 @@
       "expected_source": null,
       "retrieval_hit": null,
       "context_is_relevant": false,
-      "retrieval_seconds": 0.059,
+      "retrieval_seconds": 0.005,
       "retrieved_chunks": [
         {
           "source": "10_biyoinformatik_veritabanlari_ve_araclari.txt",
@@ -220,10 +194,7 @@
           "chunk_index": 5,
           "distance": 0.8932
         }
-      ],
-      "answer": "Bu bilgi belgelerde bulunmuyor.",
-      "answer_pass": true,
-      "generation_seconds": 0.0
+      ]
     }
   ]
 }

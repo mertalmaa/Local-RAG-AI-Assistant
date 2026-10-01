@@ -6,12 +6,10 @@ import re
 import sqlite3
 from pathlib import Path
 
-from sentence_transformers import SentenceTransformer
-
-
 BASE_DIR = Path(__file__).resolve().parent
 DATABASE_PATH = BASE_DIR / "rag_storage.db"
 EMBEDDING_MODEL_NAME = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+EMBEDDING_BACKEND = "onnxruntime-cpu-opset17"
 DOCUMENT_PATTERN = "*.txt"
 CHUNK_SIZE = 400
 CHUNK_OVERLAP = 80
@@ -85,22 +83,18 @@ def calculate_index_hash(documents):
         for document in documents
     )
     index_input = (
-        f"{EMBEDDING_MODEL_NAME}|{CHUNK_SIZE}|{CHUNK_OVERLAP}|{document_content}"
+        f"{EMBEDDING_MODEL_NAME}|{EMBEDDING_BACKEND}|"
+        f"{CHUNK_SIZE}|{CHUNK_OVERLAP}|{document_content}"
     )
     return hashlib.sha256(index_input.encode("utf-8")).hexdigest()
 
 
 def load_embedding_model():
-    """Model cache'te varsa yerelden yükler; yoksa bir kez indirir."""
-    try:
-        print("Embedding modeli yerel cache'te aranıyor...")
-        return SentenceTransformer(
-            EMBEDDING_MODEL_NAME,
-            local_files_only=True,
-        )
-    except Exception:
-        print("Embedding modeli bulunamadı. Hugging Face'ten indiriliyor...")
-        return SentenceTransformer(EMBEDDING_MODEL_NAME)
+    """Yerel ONNX embedding modelini CPU üzerinde yükler."""
+    from onnx_embedding import OnnxEmbeddingModel
+
+    print("ONNX embedding modeli yükleniyor...", flush=True)
+    return OnnxEmbeddingModel()
 
 
 def init_database(db_path=DATABASE_PATH):
